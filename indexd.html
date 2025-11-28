@@ -6,13 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="cep" type="text">
-    <button onclick="buscarEndereco()">buscar</button>
 
-    <div><strong>CEP:<pre id="dados_logradouro"></pre></strong></div>
-    <div><strong>CEP:<pre id="dados_logradouro"></pre></strong></div>
-    <div><strong>CEP:<pre id="dados_logradouro"></pre></strong></div>
-    <pre id="dados"></pre>
+ <header>
+    <a href="./indexd.html">Home</a>
+    <a href="./produtos.html">Produtos</a>
+    <a href="./clientes.html">clientes</a>
+
+ </header>
+    
+    
+    <form id="pd_form" action="">
+        <input id="pd_nome" type="text" name="nome" placeholder="Nome do Produto" ><br>
+        <select id="pd_categoria" name="categoria" >
+             <option value="">Selecione uma Categoria</option> 
+            <option value="1">Lanches</option>
+            <option value="2">Bebidas</option>
+            <option value="3">Acompanhamentos</option>
+            <option value="4">Sobremesas</option>
+
+        </select><br>
+        <input id="pd_descricao" type="text" name="descricao" placeholder="Descrição" ><br>
+        <input id="pd_disponivel" type="checkbox" name="disponivel" placeholder="Disponível (Sim/Não)" ><br>
+        <input id="pd_preco" type="number" step="0.01" name="preco" placeholder="Preço" ><br>
+       
+
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+    <pre id="pd_resultado"></pre>
+
+
+
     <script src="scriptDOis.js"></script>
 </body>
 </html>
