@@ -34,5 +34,26 @@ async function buscarendereco() {
             pd_resultado.textContent = "Erro ao enviar dados para API"
         }
     });
+    async function listarProdutos() {  
+
+        pd
+       try{
+         const respostas = await fetch(`${Link_API}api/lanchonete`,{
+            method: "GET",
+            headers: { "Content-Type": "application/json" }
+            
+         });
+            const resultados = await respostas.text();
+            pd_resultado.textContent = resultados;
+
+       }catch(err){
+        console.log('Erro:', err);
+        pd_resultado.textContent = "Erro ao listar dados da API"
+       }
+       
+
+    } 
+
+    listarProdutos();
 }
 buscarendereco();
