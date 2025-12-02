@@ -15,7 +15,51 @@
   </nav>
     <div class="container mt-5">
       <div class="row justify-content-center">
-        <span><H4 style="border: 0cap;">MENU LANCHONETE/POSTT </H4></span>
+        <div class="col-25 col-md-8 col-lg-6 ">
+          <div class=" card bg-dark text-white">
+            <div class="card-header bg-secondary text-white">
+             <span><H4 class="m-0">MENU LANCHONETE/POSTT </H4></span>
+            </div>
+            <div class="card-body"> 
+
+              <div class="bg-dark text-white">
+                <label class="m-0 h3">Adicionar Produto ao Menu da Lanchonete</label>
+              </div>
+              
+              <form id="pd_form" action="">
+
+                <div class="mb-3">
+                  <label for="pd_nome" class="form-label">Nome do Produto</label><br>
+                  <input id="nome" type="text" class="form-control" placeholder="nome do produto"><br>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="pd_categoria" class="form-check-label">Categoria do Produto</label><br>
+                <select id="categoria" class="form-select">      
+                  <option >Selecione uma categoria</option>
+                  <option value="1">Lanches</option>
+                  <option value="2">Bebidas</option>
+                  <option value="3">Acompanhamentos</option>
+                  <option value="4">Sobremesas</option>
+
+                </select><br>
+                </div>
+    
+               <input id="descricao" type="text" placeholder="descricao"><br>
+
+                <input id="disponivel" type="checkbox" placeholder="disponivel"><br>
+      
+                <input id="preco" type="number" placeholder="Preço" step="0.01"><br>
+      
+
+                <button type="submit" style="background-color: rgb(99, 99, 99);"  onclick="">Cadastrar produto</button>
+
+    
+              </form>
+            </div>
+          </div>
+         
+        </div>
 
       </div>
     </div>
@@ -23,34 +67,11 @@
 
     <table>
       <tr>
-      <td>Adicionar Produto ao Menu da Lanchonete</td>
+      
      
        </tr>
     </table><br>
-    <form id="pd_form" action="">
-        
-     <input id="nome" type="text" placeholder="nome do produto"><br>
-      
-     <select id="categoria">      
-      <option >Selecione uma categoria</option>
-      <option value="1">lanches</option>
-        <option value="2">bebidas</option>
-        <option value="3">acompanhamentos</option>
-        <option value="4">sobremesas</option>
-
-     </select><br>
     
-     <input id="descricao" type="text" placeholder="descricao"><br>
-
-     <input id="disponivel" type="checkbox" placeholder="disponivel"><br>
-      
-     <input id="preco" type="number" placeholder="Preço" step="0.01"><br>
-      
-
-     <button type="submit" style="background-color: rgb(99, 99, 99);"  onclick="">Cadastrar produto</button>
-
-    
-    </form>
     <div id="pd_resultado"></div>
     
    
